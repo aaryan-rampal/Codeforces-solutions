@@ -9,7 +9,8 @@ int main() {
 
         int t;
     cin >> t;
-    for (int qad = 0; qad < t; qad++) {
+   // fksdjfksdjf
+    for (int qad = 0; qad < t; qad++){
         int x, n, m;
         cin >> x >> n >> m;
         bool canWin = false;
@@ -19,16 +20,14 @@ int main() {
             lowestHP = min(lowestHP, (int)floor(lowestHP / 2) + 10);
         }
         for (int i = 0; i < m; i++) {
-            lowestHP -= 10;
-            if (lowestHP <= 0) {
-                canWin = true;
-                break;
-            }
-        }
-
-        if (canWin)
-            cout << "YES\n";
-        else
-            cout << "NO\n";
-    }
+            lowestHP -= 10; 
+            if (lowestHP <= 0) { 
+                canWin = true; 
+                break; 
+            } 
+        } 
+        if (canWin) cout << "YES\n"; 
+        else cout << "NO\n"; 
+        cout << canWin ? "YES" : "NO";        
+    } 
 }
